@@ -1,0 +1,65 @@
+@font-face {
+  font-family: 'Bebas';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/bebas-neue-v2-latin-regular.eot'); /* IE9 Compat Modes */
+  src: local(''),
+       url('../fonts/bebas-neue-v2-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/bebas-neue-v2-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/bebas-neue-v2-latin-regular.woff') format('woff'), /* Modern Browsers */
+       url('../fonts/bebas-neue-v2-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/bebas-neue-v2-latin-regular.svg#BebasNeue') format('svg'); /* Legacy iOS */
+}
+body{
+	width: 40%;
+	margin: 10% auto;
+	cursor: pointer;
+}
+label{
+	font-size: 30px;
+	color: hsl(0, 0%, 59%);
+	font-family: 'Bebas';
+}
+input[type='radio']{
+	transform:scale(1.8);
+	margin: 0 15px;
+	background: gray;
+}
+.block_license{
+	display: flex;
+	width: 90%;
+	height: 500px;
+	border: solid 12px hsl(0, 6%, 87%);
+	overflow: hidden;
+	background: hsl(126, 0%, 96%);
+}
+#content{
+	display: flex;
+	flex-wrap: wrap;
+	width: 90%;
+	margin: 5% auto;
+	
+}
+#lic_1, #lic_2, #lic_3{
+	justify-content: space-between;
+	margin: 5px auto;
+	flex-basis: 100%;
+	padding: 7px;
+}
+#numb_lic{
+	flex-basis: 100%;
+	margin: 5px auto;
+	border-top: 1px solid hsl(0, 6%, 87%);
+	border-bottom: 1px solid hsl(0, 6%, 87%);
+	text-align: center;
+}
+.button{
+	width: 25%;
+	height: 60%;
+	margin: 5% 37%;
+	border-radius: 39%;
+	text-align: center;
+	color: white;
+	border: none;
+	background: hsl(126, 100%, 31%);
+}

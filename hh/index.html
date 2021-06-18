@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="css/style.css" type="text/css" rel="stylesheet">
+	<script src="js/lite.js"></script>
+	<title>Document</title>
+</head>
+<body>
+
+	<div class="block_license">
+		<div id="content">
+			<div id="lic_1" onclick="check(); check_total();">
+				<input type="radio" name="rad_but" id='inp_1'>
+				<label for='inp_1'>LICENSEPLAN#1</label>
+				<span style="float: right; margin: 2.5% 2%; color: hsl(0, 0%, 59%);">$13 per license</span>
+			</div>
+
+			<div id="lic_2" onclick="check_2(); check_total();">
+				<input type="radio" name="rad_but" id='inp_2'>
+				<label for='inp_2'>LICENSEPLAN#2</label>
+				<span style="float: right; margin: 2.5% 2%; color: hsl(0, 0%, 59%);">$22 per license</span>
+			</div>
+
+			<div id="lic_3" onclick="check_3(); check_total();">
+				<input type="radio" name="rad_but" id='inp_3'>
+				<label for='inp_3'>LICENSEPLAN#3</label>
+				<span style="float: right; margin: 2.5% 2%; color: hsl(0, 0%, 59%);">$34 per license</span>
+			</div>
+
+				<div id="numb_lic">
+					<div style="margin: 30px auto;">
+						<span>Number of licenses: </span>
+						<select style="border-color: hsl(194, 100%, 42%); outline: none" id="select_" onclick="check_total();">
+							<option value="1">1</option>
+							<option value="2">2</option>
+							<option value="3">3</option>
+							<option value="4">4</option>
+							<option value="5">5</option>
+							<option value="6">6</option>
+							<option value="7">7</option>
+							<option value="8">9</option>
+							<option value="10">10</option>
+						</select>
+					</div>
+				</div>
+			
+				<span style="flex-basis: 100%;font-family: 'Bebas'; color: hsl(0, 0%, 59%); font-size: 25px; text-align: center;">TOTAL:<span id="total" style="color: hsl(194, 100%, 42%);"></span><sup style="color: hsl(194, 100%, 42%); font-size: 15px;">us</sup></span>
+				<script src="js/lite.js"></script>
+
+				<div style="flex-basis: 100%;"><button class="button">BUY NOW</button></div>
+		</div>
+	</div>
+</body>
+</html>
